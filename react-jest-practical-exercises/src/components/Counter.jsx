@@ -1,0 +1,1 @@
+import {useState} from 'react'; export default function Counter(){const [count,setCount]=useState(0); return (<div><div aria-label="count">{count}</div><button onClick={()=>setCount(c=>c+5)}>Increment</button></div>);}

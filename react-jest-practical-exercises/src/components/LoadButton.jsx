@@ -1,0 +1,1 @@
+import {useState} from 'react'; export default function LoadButton(){const [label,setLabel]=useState('Click to load.'); async function handleClick(){const res=await fetch('https://jsonplaceholder.typicode.com/users/1'); const data=await res.json(); setLabel(`Loaded: ${data.username}.`);} return <button onClick={handleClick}>{label}</button>}

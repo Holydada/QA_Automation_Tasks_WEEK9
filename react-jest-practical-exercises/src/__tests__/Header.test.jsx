@@ -1,0 +1,1 @@
+import renderer from 'react-test-renderer'; import Header from '../components/Header'; test('Header snapshot',()=>{const tree=renderer.create(<Header title="My App"/>).toJSON(); expect(tree).toMatchSnapshot();});
